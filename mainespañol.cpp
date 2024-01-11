@@ -1,11 +1,7 @@
 #include<SoftwareSerial.h>
 SoftwareSerial mSerial2(14, 12); // d5(GPIO14)>>RX  d6(GPIO12)>>TX
 
-/*****
 
-AKP's Tech Classroom
- 
-*****/
 
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
@@ -152,14 +148,7 @@ void loop() {
     lastMsg = now;
     ++value;
 
-    /*
-    float tempInterna = 29.9;
-    float tempExterna = 30.1;
-    float humInterna1 = 31.1;
-    float humInterna2 = 32.1;
-    float humExterna1 = 33.1;
-    float humExterna2 = 34.1;
-    */
+ 
     // TEMPERATURA INTERNA
     snprintf (msgTemperaturaInterna, MSG_BUFFER_SIZE, "%.2f", tempInterna);
     Serial.print("Publicar mensaje: ");
