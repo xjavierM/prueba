@@ -1,12 +1,6 @@
 #include<SoftwareSerial.h>
 SoftwareSerial mSerial2(14, 12); // d5(GPIO14)>>RX  d6(GPIO12)>>TX
 
-/*****
-
-AKP's Tech Classroom
- 
-*****/
-
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
