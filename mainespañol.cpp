@@ -8,7 +8,7 @@ SoftwareSerial mSerial2(14, 12); // d5(GPIO14)>>RX  d6(GPIO12)>>TX
 
 // Cambia las credenciales a continuación para que tu ESP8266 se conecte a tu enrutador
 const char* ssid = "POCOX3";
-const char* password = "1234567891";
+const char* password = "AB*/12¡34567891..a";
 
 // Cambia la variable a la dirección IP de tu Raspberry Pi, para que se conecte a tu broker MQTT
 const char* mqtt_server = "192.168.133.34";
