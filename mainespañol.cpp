@@ -3,11 +3,11 @@ SoftwareSerial mSerial2(14, 12); // d5(GPIO14)>>RX  d6(GPIO12)>>TX
 
 
 
-#include <ESP8266WiFi.h>
+//#include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
 // Cambia las credenciales a continuación para que tu ESP8266 se conecte a tu enrutador
-const char* ssid = "POCOX3";
+//const char* ssid = "POCOX3";
 // const char* password = "AB*/12¡34567891..a";
 
 // Cambia la variable a la dirección IP de tu Raspberry Pi, para que se conecte a tu broker MQTT
@@ -20,16 +20,16 @@ PubSubClient client(espClient22);
 // Lámpara - LED - GPIO 4 = D2 en la placa ESP-12E NodeMCU
 const int led = 4;
 
-unsigned long lastMsg = 0;
+//unsigned long lastMsg = 0;
 #define MSG_BUFFER_SIZE  (50)
 
-char msgTemperaturaInterna[MSG_BUFFER_SIZE];
-char msgTemperaturaExterna[MSG_BUFFER_SIZE];
+//char msgTemperaturaInterna[MSG_BUFFER_SIZE];
+//char msgTemperaturaExterna[MSG_BUFFER_SIZE];
 
-char msgHumedadInterna1[MSG_BUFFER_SIZE];
-char msgHumedadInterna2[MSG_BUFFER_SIZE];
-char msgHumedadExterna1[MSG_BUFFER_SIZE];
-char msgHumedadExterna2[MSG_BUFFER_SIZE];
+//char msgHumedadInterna1[MSG_BUFFER_SIZE];
+//char msgHumedadInterna2[MSG_BUFFER_SIZE];
+//char msgHumedadExterna1[MSG_BUFFER_SIZE];
+//char msgHumedadExterna2[MSG_BUFFER_SIZE];
 
 char msgBomba1[MSG_BUFFER_SIZE];
 char msgBomba2[MSG_BUFFER_SIZE];
