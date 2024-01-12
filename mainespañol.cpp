@@ -11,7 +11,7 @@ const char* ssid = "POCOX3";
 // const char* password = "AB*/12¡34567891..a";
 
 // Cambia la variable a la dirección IP de tu Raspberry Pi, para que se conecte a tu broker MQTT
-const char* mqtt_server = "192.168.133.34";
+// const char* mqtt_server = "192.168.133.34";
 
 // Inicializa el espClient. Debes cambiar el nombre de espClient si tienes múltiples ESP en tu sistema de automatización del hogar
 WiFiClient espClient22;
